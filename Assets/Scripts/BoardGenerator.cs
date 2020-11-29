@@ -38,7 +38,7 @@ public class BoardGenerator : MonoBehaviour
     {
         Vector3 spawnPosition = new Vector3(
             Random.Range(boardBorders[0], boardBorders[1]),
-            target.position.y,
+            0,
             zOffset
             );
         return Instantiate(obstaclePrefab, spawnPosition, Quaternion.identity, obstaclesParent);
